@@ -19,7 +19,7 @@ class TarefaController{
             $this->tarefaModel->criar($_POST['descricao']);
         }
 
-        header("Location: index.php");
+        header("location: index.php");
         
     }
     # excluir
@@ -28,7 +28,7 @@ class TarefaController{
         if(isset($_GET['delete'])){
             $this->tarefaModel->excluir($_GET['delete']);
         }
-        header("Location: index.php");
+        header("location: index.php");
     }
 
 }
