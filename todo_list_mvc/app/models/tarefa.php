@@ -5,7 +5,7 @@ require_once __DIR__ . '/../config/database.php';
 class Tarefa{
     private $conn;
 
-    public function __constructor(){
+    public function __construct(){
         $db = new Database();
         $this->conn = $db->conectar();
     }
@@ -22,7 +22,7 @@ class Tarefa{
             while($row = $result -> fetch_assoc())
             $tarefas[] = $row;
         }
-
+    }
         return $tarefas;    
 
     }
