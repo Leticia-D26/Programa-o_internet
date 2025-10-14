@@ -7,6 +7,12 @@ class TarefaController{
 
     }
 
+    ## listar
+    public function index(){
+        $tarefa = $this->tarefaModel->listar();
+        include __DIR__ . '/../views/listar.php';
+    }
+
     ## criar
     public function criar(){
         if(isset($_POST['descricao']) && !empty(trim($_POST['descricao']))){

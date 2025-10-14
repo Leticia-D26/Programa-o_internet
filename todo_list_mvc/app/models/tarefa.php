@@ -16,10 +16,10 @@ class Tarefa{
 
         $tarefas = [];
         $sql = "SELECT * FROM tarefas ORDER BY data_criacao DESC ";
-        $resultado = $this->conn->query($sql);
+        $result = $this->conn->query($sql);
 
-        if($resultado -> num_rows > 0){
-            while($row = $resultado -> fetch_assoc())
+        if($result -> num_rows > 0){
+            while($row = $result -> fetch_assoc())
             $tarefas[] = $row;
         }
 
