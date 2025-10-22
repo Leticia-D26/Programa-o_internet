@@ -43,4 +43,8 @@ class Tarefa{
 
 }
 
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> a590af7f8f5be0ba442d7bbdb2b86567652a1b1b
