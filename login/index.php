@@ -13,7 +13,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])){
         $email = $mysqli->real_escape_string($_POST['email']);
         $senha = $mysqli->real_escape_string($_POST['senha']);
 
-        $sql = "SELECT * FROM usuarios WHERE email = $email AND senha = $senha";
+        $sql = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
 
         $listar_usuarios = $mysqli->query($sql);
         $quantidade = $listar_usuarios->num_rows;
